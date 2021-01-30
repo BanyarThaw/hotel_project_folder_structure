@@ -57,6 +57,14 @@ Route::get('gallery/photos',[PublicController::class,'gallery_photos_list']);
 //gallery/videos
 Route::get('gallery/videos',[PublicController::class,'gallery_videos_list']);
 
+//Testing
+Route::get('testing',[PublicController::class,'testing_1']);
+Route::post('testing',[PublicController::class,'testing_2']);
+Route::get('testing3',[PublicController::class,'testing_3']);
+Route::get('test_cart',[PublicController::class,'test_cart_detail']);
+Route::post('test_cart',[PublicController::class,'test_cart']);
+Route::post('test_extra_bed',[PublicController::class,'test_extra_bed']);
+
 //Admin Interface
 //================
 //rooms

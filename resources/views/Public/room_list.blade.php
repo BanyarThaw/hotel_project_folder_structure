@@ -26,7 +26,7 @@
         <input type="submit" value="Submit">
     </form>
     <br>
-    <h2>Rooms List</h2>
+    <h2>Rooms List (Default room list,later room will show according to their close dates)</h2>
     <form action="cart" method="post">
         {{ csrf_field() }}
         <input type="number" name="total_member" required>

@@ -1,6 +1,7 @@
 @extends('Templates.Public.main_template')
 
 @section('content')
+    <?php print_r(session('cart')); ?>
     <p>this cart page</p>
     @if(session('cart'))
         <?php 
@@ -30,40 +31,3 @@
         <a href="checkout">Proceed to Check Out</a>
     @endif
 @endsection
-<!--
-<table border="1">
-    <thead>
-        <tr>
-            <th>Room Name</th>
-            <th>Room Quantity</th>
-            <th>Total Members</th>
-            <th>Cost</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Hla Hla</td>
-            <td>3</td>
-            <td>10</td>
-            <td>100</td>
-        </tr>
-        <tr>
-            <td>Hla Hla</td>
-            <td>3</td>
-            <td>10</td>
-            <td>100</td>
-        </tr>
-        <tr>
-            <td>Hla Hla</td>
-            <td>3</td>
-            <td>10</td>
-            <td>100</td>
-        </tr>
-    </tbody>
-    <tfoot>
-        <tr>
-            <td colspan="4" style="text-align: center;">Total Cost : 300</td>
-        </tr>
-    </tfoot>
-</table>
--->
